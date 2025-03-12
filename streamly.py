@@ -112,7 +112,7 @@ def get_streamlit_api_code_version():
     try:
         response = requests.get(API_DOCS_URL)
         if response.status_code == 200:
-            return "1.36"
+            return "1.43.0"
     except requests.exceptions.RequestException as e:
         logging.error(f"Error connecting to the Streamlit API documentation: {str(e)}")
     return None
